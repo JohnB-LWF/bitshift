@@ -1,9 +1,5 @@
-import sys
 import time
 import unittest
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / '.packages'))
 from fastapi.testclient import TestClient
 from server.main import app, rooms, queue
 from server.game_logic import generate_ip, validate

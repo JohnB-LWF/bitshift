@@ -15,10 +15,12 @@ python run.py
 
 Open http://localhost:8000. To play together on your local network, both players open `http://SERVER_LAN_IP:8000` and select Multiplayer. Allow port 8000 through the host firewall if needed. Two browser tabs also work for testing; enter multiplayer independently in each tab.
 
-On this machine, dependencies have been installed into the project-local `.packages` directory. If Python is not on PATH, run:
+On Windows, you can create and use a virtual environment without activating it:
 
 ```powershell
-& "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" run.py
+py -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe run.py
 ```
 
 ## Playing
@@ -40,4 +42,6 @@ Multiplayer rooms and matchmaking live in process memory. Use **one server worke
 python -m unittest discover -s tests -v
 ```
 
-If using project-local dependencies, set `PYTHONPATH=.packages` first. The tests cover validation, matchmaking, shared rounds, stale submissions, reconnects, first-to-five wins, and forfeits.
+Use the same Python environment for installing requirements, running the server, and running tests. The application uses that environment's packages; an old `.packages` folder is not loaded. Do not set `PYTHONPATH` to `.packages`: compiled dependencies from another Python version may be incompatible.
+
+The tests cover validation, matchmaking, shared rounds, stale submissions, reconnects, first-to-five wins, and forfeits.
