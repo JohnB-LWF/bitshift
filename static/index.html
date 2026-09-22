@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0d1117"><title>Bitshift — The IPv4 conversion arena</title><link rel="stylesheet" href="/static/css/styles.css"></head>
+<body>
+<header><a class="brand" href="/" aria-label="Bitshift home"><span class="brand-icon">01</span> bitshift<span class="brand-dot">.</span></a><div class="header-right"><span class="edition">THE IPv4 CONVERSION ARENA</span><button id="sound" class="icon-button" aria-label="Toggle sound">Sound on</button></div></header>
+<main>
+<section id="menu">
+ <div class="hero"><div class="eyebrow"><span class="live-dot"></span> THINK IN BINARY</div><h1>Four octets.<br>One sharp mind<span>.</span></h1><p>Turn decimal into instinct. Train your networking brain,<br class="desktop"> beat the clock, or race a real opponent.</p><div class="hero-code" aria-hidden="true"><span>192</span><i>→</i><b>11000000</b><small>DECIMAL &nbsp;&nbsp; / &nbsp;&nbsp; BINARY</small></div></div>
+ <div class="section-label"><span>CHOOSE YOUR CHALLENGE</span><span>01 / 03 MODES</span></div>
+ <div class="modes">
+  <button class="mode-card" data-mode="free"><span class="mode-icon">∞</span><span class="tag">YOUR PACE</span><h2>Free play</h2><p>A little practice goes a long way.<br>No clock. Just you and the bits.</p><span class="card-bottom">Build your intuition <b>↗</b></span></button>
+  <button class="mode-card" data-mode="timed"><span class="mode-icon">◷</span><span class="tag">60 SECONDS / IP</span><h2>Time attack</h2><p>Stay cool. Convert fast.<br>Every second saved scores more.</p><span class="card-bottom">Race the clock <b>↗</b></span></button>
+  <button class="mode-card featured" data-mode="multi"><span class="mode-icon">⇄</span><span class="tag">LIVE 1 VS 1</span><h2>Multiplayer</h2><p>Same address. Two contenders.<br>First to five takes the match.</p><span class="card-bottom">Enter the arena <b>↗</b></span></button>
+ </div>
+ <div class="learning"><span class="small-icon">⌘</span><div><strong>Small bits. Big breakthroughs.</strong><p>Made for curious minds and future network engineers.</p></div><button id="learn" class="text-button">How to play <span>↗</span></button></div>
+</section>
+<section id="game" hidden>
+ <div class="game-heading"><div><div class="eyebrow" id="mode-label">PRACTICE LAB</div><h1 id="game-title">Find your flow<span>.</span></h1></div><div><button id="pause" class="icon-button">Ⅱ Pause</button><button id="quit" class="icon-button">↗ Menu</button></div></div>
+ <div class="hud"><div><small>SCORE</small><strong id="score">0</strong></div><div><small>STREAK</small><strong id="streak">0 <em>in a row</em></strong></div><div><small>MULTIPLIER</small><strong id="multiplier">1×</strong></div><div><small id="clock-label">SOLVED</small><strong id="clock">0</strong></div></div>
+ <div id="arena"><div class="reference"><div class="section-label"><span>YOUR BINARY TOOLKIT</span><span>ADD THE VALUES WHERE THE BIT IS 1</span></div><div class="powers" id="powers"></div></div>
+ <div class="board"><div class="board-top"><span id="round-label">ADDRESS 01</span><span>DECIMAL → BINARY</span></div><div class="octets" id="octets"></div><div class="board-help"><span>8 bits per octet · leading zeros count</span><span><kbd>Tab</kbd> next &nbsp; <kbd>Enter</kbd> submit</span></div><form id="answer-form"><div class="answers" id="answers"></div><div class="submit-row"><p id="feedback" role="status" aria-live="polite">You’ve got this. One octet at a time.</p><button id="reveal" class="text-button" type="button" hidden>Reveal & skip</button><button id="submit" class="primary" type="submit">Check answer <span>↵</span></button></div></form></div></div>
+ <div class="game-tip"><span>PRO TIP</span> Work from left to right. Can 128 fit? Write 1, subtract it, and keep going.</div>
+</section>
+</main>
+<footer><span><b>bitshift.</b> &nbsp; A better way to think in bits.</span><span>8 BITS × 4 OCTETS = ENDLESS POSSIBILITIES</span></footer>
+<dialog id="dialog"><div id="dialog-content"></div></dialog>
+<script type="module" src="/static/js/game.js"></script>
+</body></html>
