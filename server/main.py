@@ -22,6 +22,11 @@ async def index():
     return FileResponse(STATIC / 'index.html')
 
 
+@app.get('/favicon.ico', include_in_schema=False)
+async def favicon():
+    return FileResponse(STATIC / 'favicon.ico', media_type='image/x-icon')
+
+
 @app.get('/health')
 async def health():
     return {'status': 'ok'}
