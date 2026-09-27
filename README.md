@@ -1,10 +1,30 @@
 # Bitshift
 
+[![Play on Render](https://img.shields.io/badge/Play-Render-46E3B7?logo=render&logoColor=white)](https://bitshift-90az.onrender.com/)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-WebSockets-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![GitHub stars](https://img.shields.io/github/stars/JohnB-LWF/bitshift?style=flat&logo=github)](https://github.com/JohnB-LWF/bitshift)
+
 A keyboard-first IPv4 conversion game built with Python, FastAPI, native WebSockets, and vanilla JavaScript. Includes free play, 60 seconds per address time attack, and live first-to-five multiplayer.
 
 Made using AI: GPT-6 Astra
 
-## Run
+## Contents
+
+- [Play Now](#play-now)
+- [Run Locally](#run-locally)
+- [Playing](#playing)
+- [Hosting Limitations](#hosting-limitations)
+- [Tests](#tests)
+
+## Play Now
+
+[You can play the game now on Render here!](https://bitshift-90az.onrender.com/)
+
+> [!NOTE]
+> It may take a moment for the server to spin up. Multiplayer features work as well.
+
+## Run Locally
 
 Use Python 3.10 or newer:
 
