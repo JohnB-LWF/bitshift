@@ -7,6 +7,8 @@
 
 A keyboard-first IPv4 conversion game built with Python, FastAPI, native WebSockets, and vanilla JavaScript. Includes free play, 60 seconds per address time attack, and live first-to-five multiplayer.
 
+![Bitshift gameplay](assets/bitshift.png)
+
 Made using AI: GPT-6 Astra
 
 ## Contents
